@@ -1,0 +1,81 @@
+---
+name: Atul Sanjay
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: MS, Applied Statistics 
+position: Data Analyst
+address: Bowling Green, OH
+phone: (419).378.2103
+email: atulsanjay1@gmail.com
+www: atulsanjay.me         
+github: atulsanjay
+linkedin: atulsanjay
+#twitter: 
+aboutme: "MSc in Applied Statistics with 4+ years of IT experience as data quality analyst. Possess experience in diverse domains and proficient in cleaning and transforming data to provide data-driven recommendations, visualizations and conducting statistical analysis to identify performance patterns"  
+headcolor: 2d2d2d #highlighting color - change to a grey/black that matches so it doesn't highlight
+docname: Resume
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- # Professional Goal -->
+
+<!-- GOAL TEXT WOULD GO HERE -->
+
+# Skills
+
+## Data Science
+
+*  Machine Learning, Data analytics, Statistical Analysis, Data mining, Predictive Modeling, Data visualization, Database Management, Natural language processing, Big Data, A/B testing, Forecasting
+
+## Languages
+
+* Python, R, SQL
+
+## Frameworks
+
+* Matplotlib, pandas, scikit-learn, NumPy, seaborn, NLTK, Tidyverse , Git
+
+
+
+## Algorithms
+
+* Decision trees, multivariate and logistic regression, kNN, Clustering-K means, Random Forest, Naïve Bayes, Support Vector Machine, Ensembling, Bagging & Boosting, Gradient Descent, XGBoost, Random forest, RNN, CNN, LSTM, decision optimization
+
+# Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Graduate Research and Teaching Assistant", "Bowling Green State University", "Bowling Green, OH", "Jan 2019– Dec 2020", "Assisted in market research and exploratory data analysis for airline industry using SPSS and R statistical packages.",
+  "Graduate Research and Teaching Assistant", "Bowling Green State University", "Bowling Green, OH", "Jan 2019– Dec 2020", "Performed data imputation using KNN, reduced the number of dimensions using PCA and applied tree-based classification methods.",
+  "Graduate Research and Teaching Assistant", "Bowling Green State University", "Bowling Green, OH", "Jan 2019– Dec 2020", "Teaching assistant for courses - Business Statistics using R; Predictive Analytics; Operation Research.",
+  
+  
+  
+  "Consultant, Data Quality Analyst", "Capgemini Consulting", "Mumbai, India", "Dec 2014 – Dec 2018", "Developed and maintained Python based testing frameworks, User acceptance tests (UAT) for enterprise level applications in Agile methodology-based software development life cycle.",
+  "Consultant, Data Quality Analyst", "Capgemini Consulting", "Mumbai, India", "Dec 2014 – Dec 2018", "Created SQL queries over large datasets to conduct ad-hoc analysis customers to identify, analyze, and interpret trends of customer traverse in applications.",
+  "Consultant, Data Quality Analyst", "Capgemini Consulting", "Mumbai, India", "Dec 2014 – Dec 2018", "Wrangled unstructured data obtained from different 3rd party data sources for analytics and modeling using Python and SQL and ingested it to the in-house database.",
+  "Consultant, Data Quality Analyst", "Capgemini Consulting", "Mumbai, India", "Dec 2014 – Dec 2018", "Developed and rolled out interactive Dashboards for stakeholders and business to compare key metrics indicators depicting customer behavior towards various services offered.",
+  "Consultant, Data Quality Analyst", "Capgemini Consulting", "Mumbai, India", "Dec 2014 – Dec 2018", "Sentiment analysis and A/B testing for data validation to identify the most profitable segments."
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "MS, Applied Statistics ", "Bowling Green State University", "Bowling Green, OH", "2018 - 2020","	Specialization in business analytics with focus on data mining and machine learning ",
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates,
+   "B.E, Mechanical Engineering", "Visvesvaraya Technological University", "Bengaluru, India", "2010 - 2014", 
+) %>% 
+  detailed_entries(degree, dates, uni, loc)
+```
